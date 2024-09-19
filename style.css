@@ -34,6 +34,19 @@ body {
     font-weight: 700;
     color: hsl(71, 73%, 54%);
     margin-bottom: 15px;
+    animation: appear-disappear 3s infinite;
+}
+
+@keyframes appear-disappear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .section-1 #second-line {
@@ -98,7 +111,11 @@ body {
     color: hsl(0, 0%, 100%);
     font-family: 'Karla', sans-serif;
     font-weight: 700;
+}
 
+.sign-up-btn:hover{
+    animation: shake 0.3s;
+    cursor: pointer;
 }
 
 .why-us {
